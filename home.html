@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head><title>BookShazam - Home</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<div class="container">
+<h2>Welcome! 📖</h2>
+<p>Upload a book photo</p>
+<input type="file" id="bookPhoto">
+<button onclick="identifyBook()">Shazam This Book</button>
+<p id="result"></p>
+</div>
+<script>
+function identifyBook(){
+  document.getElementById("result").innerText = "Searching... (Next step: we will connect Google Books API)";
+}
+</script>
+</body>
+</html>
